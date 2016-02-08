@@ -27,6 +27,7 @@
 //= require js/jquery-doubletaptogo/jquery.dcd.doubletaptogo.js
 //= require js/vide/jquery.vide.js
 //= require js/stellar/jquery.stellar.js
+//= require js/countdown/jquery.plugin.js
 //= require js/countdown/jquery.countdown.js
 //= require js/magnific-popup/jquery.magnific-popup.js
 //= require js/owlcarousel/owl.carousel.js
