@@ -39,7 +39,9 @@
     <!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
   </head>
   <body class="outside-bottom-bar-page">
-    
+
+
+    <%= render partial: "shared/flash_messages", flash: flash %> 
     <%= yield %>
 
     <!-- Google Map -->
