@@ -950,7 +950,7 @@ img.with-border{
 /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
 /* ----------------------------------------------*/
 #main-slider .flex-control-nav, .flex-control-paging{
-	 background-color:transparent; !important;
+	 background-color:transparent;
 	 margin:0; padding:0;
 	 position:absolute;
 	 bottom:0;
