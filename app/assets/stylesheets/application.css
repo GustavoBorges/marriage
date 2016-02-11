@@ -11,4 +11,17 @@
  * file per style scope.
  *
 
+*= require_self
+*= require css/bootstrap/bootstrap
+*= require css/preloader
+*= require css/preloader-default
+*= require css/flexslider/flexslider
+*= require css/animate/animate
+*= require css/countdown/jquery.countdown
+*= require css/magnific-popup/magnific-popup
+*= require css/owlcarousel/owl.carousel
+*= require css/owlcarousel/owl.theme.css
+*= require css/fonts/fontello/css/fontello
+*= require css/style
+
 */
