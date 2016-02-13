@@ -855,7 +855,7 @@
         <div id="message" class="col-md-12 message">
           <!-- Show Message --> 
         </div>
-        <%= form_tag(controller: "home", action: "confirm", method: "post") do%>
+        <%= form_tag("/confirm", remote: true) do%>
           <div class="col-md-6">
             <div id="fullname" class="form-group">
               <%= label_tag(:nome, "*NOME") %>
@@ -882,7 +882,7 @@
           </div>
           <div class="col-md-12 text-center">
             <div class="form-group">
-              <input type="submit" id="submitButton"  name="submitButton" class="button medium reverse" value="Enviar">
+              <%= submit_tag "Enviar", class: "button medium reverse" %>
             </div>
           </div>
         <% end %>

@@ -7,6 +7,7 @@
     <meta name="author" content="www.dethemes.com">
     <title>NATHÁLIA &amp; GUSTAVO</title>
     <link rel="icon" href="images/favicon.jpg">
+    <%= csrf_meta_tag %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" =>true %>
 
@@ -28,6 +29,6 @@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
-    <%= javascript_include_tag "application" %> 
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>

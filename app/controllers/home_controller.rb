@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
 	
 	def index
-  	end
+  end
 
-  	def confirm
+  def confirm
 
     params[:convidado] = params.slice(:nome, :email, :qtd_pessoas, :menssagem)
     @convidado = Convidado.find_by(params.slice(:email))
@@ -20,7 +20,11 @@ class HomeController < ApplicationController
     rescue
       flash[:error] = "Aconteceu algum problema na confirmação, tente novamente."
     end
-    redirect_to controller: :home
+
+     respond_to do |format|
+      format.html { redirect_to controller: :home }
+      format.js {flash[:notice] = "Obrigado por confirmar sua presença!"}
+    end
   end
 
 private
