@@ -1,9 +1,9 @@
 # Change these
-server '162.243.65.204', port: 22, roles: [:web, :app, :db], primary: true
+server '162.243.239.182', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:GustavoBorges/marriage.git'
 set :application,     'marriage'
-set :user,            'deployer'
+set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
