@@ -365,7 +365,7 @@
             <!--PHOTO-ITEM-->
             <div class="photo-item frame-border animation fadeIn">
               <!--PHOTO-->
-              <img src="http://placehold.it/293x325" alt="" class="hover-animation image-zoom-rotate">
+              <%= image_tag("padrinhos/mateus.jpg", class: "hover-animation image-zoom-rotate") %>
               <!--PHOTO OVERLAY-->
               <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
               </div>
@@ -374,7 +374,7 @@
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                 <div class="alignment">
                   <div class="v-align center-middle">
-                    <a href="http://placehold.it/293x325" class="magnific-zoom">
+                    <a href="<%= image_url('padrinhos/mateus.jpg') %>" class="magnific-zoom">
                       <div class="de-icon circle light medium-size inline">
                         <i class="de-icon-zoom-in"></i>
                       </div>
@@ -468,7 +468,7 @@
             <!--PHOTO-ITEM-->
             <div class="photo-item frame-border animation fadeIn">
               <!--PHOTO-->
-              <img src="http://placehold.it/293x325" alt="" class="hover-animation image-zoom-rotate">
+              <%= image_tag("madrinhas/bruna.jpg", class: "hover-animation image-zoom-rotate") %>
               <!--PHOTO OVERLAY-->
               <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
               </div>
@@ -477,7 +477,7 @@
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                 <div class="alignment">
                   <div class="v-align center-middle">
-                    <a href="http://placehold.it/293x325" class="magnific-zoom">
+                    <a href="<%= image_url('madrinhas/bruna.jpg') %>" class="magnific-zoom">
                       <div class="de-icon circle light medium-size inline">
                         <i class="de-icon-zoom-in"></i>
                       </div>
@@ -542,7 +542,7 @@
             <!--PHOTO-ITEM-->
             <div class="photo-item frame-border animation fadeIn">
               <!--PHOTO-->
-              <img src="http://placehold.it/293x325" alt="" class="hover-animation image-zoom-rotate">
+              <%= image_tag("madrinhas/lana.jpg", class: "hover-animation image-zoom-rotate") %>
               <!--PHOTO OVERLAY-->
               <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
               </div>
@@ -551,7 +551,7 @@
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                 <div class="alignment">
                   <div class="v-align center-middle">
-                    <a href="http://placehold.it/293x325" class="magnific-zoom">
+                    <a href="<%= image_url('madrinhas/lana.jpg') %>" class="magnific-zoom">
                       <div class="de-icon circle light medium-size inline">
                         <i class="de-icon-zoom-in"></i>
                       </div>
@@ -789,7 +789,7 @@
              Sugestões de presentes
             </h2>
             <p>
-              Seguem os links de sugestões de presentes do chá de panela 
+              Seguem os links de sugestões de presentes 
             </p>
           </div>
         </div>
@@ -799,9 +799,9 @@
       <div class="row">
         <div class="col-md-offset-1 col-md-10 text-center">
           <div id="registry-logo" class="owl-carousel">
-            <div class="item"><a href="http://dular.com.br/listas/listaProdutos.jsp?lista.codLista=50317" target="_blank">
-              <%= image_tag("listas/dular.gif") %></a> </div>
-            <div class="item"> <a href="https://www.etna.com.br/etna/pagina-de-lista?page=1&giftlistId=gl148949765" target="_blank"><%= image_tag("listas/etna.jpg") %></a> </div>
+            <div class="item"><a href="http://www.camicado.com.br/weddinglist/products/60298688" target="_blank">
+              <%= image_tag("listas/camicado.png") %></a> </div>
+            <div class="item"> <a href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=512417" target="_blank"><%= image_tag("listas/ponto_frio.jpg") %></a> </div>
           </div>
         </div>
       </div>
@@ -838,9 +838,6 @@
               Confirmação
             </h2>
             <p>
-              Confirme sua presença para o chá de panela até o dia: 21/02
-            </p>
-            <p>
               Confirme sua presença para a cerimônia até o dia: 14/04
             </p>
             <p>
@@ -871,7 +868,7 @@
             </div>
             <div id="events" class="form-group">
               <%= label_tag(:eventos, "*VOÇÊ VAI EM") %>
-              <%= select_tag(:eventos, options_for_select([['Chá de Panela', 1], ['Cerimônia e Recepção', 2]]), multiple: true, class: 'form-control') %>
+              <%= select_tag(:eventos, options_for_select([['Cerimônia e Recepção', 2]]), multiple: true, class: 'form-control') %>
             </div>
           </div>
           <div class="col-md-6">
