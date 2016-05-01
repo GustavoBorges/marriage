@@ -650,7 +650,7 @@
             <!--PHOTO-ITEM-->
             <div class="photo-item frame-border animation fadeIn">
               <!--PHOTO-->
-              <img src="http://placehold.it/293x325" alt="" class="hover-animation image-zoom-rotate">
+              <%= image_tag("madrinhas/mariana.jpg", class: "hover-animation image-zoom-rotate") %>
               <!--PHOTO OVERLAY-->
               <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
               </div>
@@ -659,7 +659,7 @@
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                 <div class="alignment">
                   <div class="v-align center-middle">
-                    <a href="http://placehold.it/293x325" class="magnific-zoom">
+                    <a href="<%= image_url('madrinhas/mariana.jpg') %>" class="magnific-zoom">
                       <div class="de-icon circle light medium-size inline">
                         <i class="de-icon-zoom-in"></i>
                       </div>
